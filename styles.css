@@ -156,36 +156,34 @@ button {
 }
 
 .brand-mark {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background: var(--bg-forest-deep);
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #FFFFFF;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 0 0 1px rgba(197, 248, 58, 0.25);
+  padding: 2px;
+  box-shadow: 0 4px 14px rgba(36, 28, 94, 0.12), inset 0 0 0 1px rgba(76, 29, 149, 0.16);
 }
 
-.brand-mark svg {
-  width: 21px;
-  height: 21px;
-  color: var(--solar-lime);
-}
-
-.brand-text-group {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.05;
+.brand-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .brand-name {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
-  font-size: 1.125rem;
+  font-size: 1.15rem;
   letter-spacing: -0.02em;
-  color: var(--text-primary);
+  background: linear-gradient(135deg, #1D3587 0%, #6D28D9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   text-transform: uppercase;
 }
 
@@ -1648,7 +1646,15 @@ button {
   }
 }
 
+.brand-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.05;
+}
+
 .footer-brand .brand-name {
+  background: none;
+  -webkit-text-fill-color: #FFFFFF;
   color: #FFFFFF;
 }
 
