@@ -5,42 +5,43 @@
    ========================================================================== */
 
 :root {
-  /* Core Surfaces */
-  --bg-alabaster: #F6F7F3;
+  /* Core Surfaces — Mettalon Official Brand Palette (Royal Indigo, Imperial Violet & Solar Gold) */
+  --bg-alabaster: #F7F7FC;
   --bg-pure: #FFFFFF;
-  --bg-stone: #ECEEE7;
-  --bg-charcoal: #0A0E0C;
-  --bg-forest-deep: #0B2117;
-  --bg-forest-mid: #113022;
-  --bg-forest-card: #133526;
+  --bg-stone: #EEEFF8;
+  --bg-charcoal: #0B0D20;
+  --bg-forest-deep: #171D52;
+  --bg-forest-mid: #3B1E77;
+  --bg-forest-card: #241C5E;
+  --brand-gradient: linear-gradient(135deg, #1D3587 0%, #4C1D95 52%, #7E22CE 100%);
 
-  /* Accents */
-  --solar-lime: #C5F83A;
-  --solar-lime-hover: #D2FF54;
-  --solar-lime-Deep: #94C913;
-  --solar-lime-Tint: rgba(197, 248, 58, 0.14);
+  /* Accents (Solar Gold Star & Electric Violet from Mettalon Logo) */
+  --solar-lime: #FFD147;
+  --solar-lime-hover: #FFE074;
+  --solar-lime-Deep: #E5A910;
+  --solar-lime-Tint: rgba(109, 40, 217, 0.10);
   --whatsapp-green: #25D366;
 
   /* Typography Colors */
-  --text-primary: #0B130F;
-  --text-secondary: #3E4C44;
-  --text-muted: #67766E;
-  --text-on-dark: #F6F8F5;
-  --text-on-dark-secondary: rgba(246, 248, 245, 0.74);
-  --text-on-dark-muted: rgba(246, 248, 245, 0.50);
+  --text-primary: #0F1330;
+  --text-secondary: #3E4366;
+  --text-muted: #686E93;
+  --text-on-dark: #F8F8FF;
+  --text-on-dark-secondary: rgba(248, 248, 255, 0.78);
+  --text-on-dark-muted: rgba(248, 248, 255, 0.54);
 
   /* Borders & Hairlines */
-  --border-light: rgba(11, 33, 23, 0.09);
-  --border-light-strong: rgba(11, 33, 23, 0.16);
-  --border-dark: rgba(255, 255, 255, 0.10);
-  --border-lime: rgba(197, 248, 58, 0.32);
+  --border-light: rgba(23, 29, 82, 0.09);
+  --border-light-strong: rgba(76, 29, 149, 0.18);
+  --border-dark: rgba(255, 255, 255, 0.12);
+  --border-lime: rgba(255, 209, 71, 0.42);
 
   /* Elevation & Shadows */
-  --shadow-subtle: 0 4px 20px -2px rgba(10, 18, 14, 0.05);
-  --shadow-elevated: 0 24px 60px -12px rgba(9, 24, 17, 0.14);
-  --shadow-cinema: 0 32px 80px -16px rgba(5, 14, 10, 0.45);
-  --shadow-cta-lime: 0 12px 32px -6px rgba(197, 248, 58, 0.35);
-  --shadow-cta-forest: 0 14px 34px -6px rgba(11, 33, 23, 0.28);
+  --shadow-subtle: 0 4px 20px -2px rgba(23, 29, 82, 0.06);
+  --shadow-elevated: 0 24px 60px -12px rgba(36, 28, 94, 0.18);
+  --shadow-cinema: 0 32px 80px -16px rgba(15, 19, 48, 0.48);
+  --shadow-cta-lime: 0 12px 32px -6px rgba(255, 209, 71, 0.38);
+  --shadow-cta-forest: 0 14px 34px -6px rgba(76, 29, 149, 0.34);
 
   /* Radii */
   --radius-pill: 9999px;
