@@ -1092,14 +1092,55 @@ button {
   background: var(--bg-pure);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
-  padding: clamp(26px, 3.5vw, 38px);
+  padding: 16px 16px 26px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   box-shadow: var(--shadow-subtle);
   transition: transform 0.35s var(--ease-out-expo), box-shadow 0.35s var(--ease-out-expo), border-color 0.3s ease;
   position: relative;
   overflow: hidden;
+}
+
+.why-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: var(--bg-charcoal);
+}
+
+.why-card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.why-card:hover .why-card-img-wrap img {
+  transform: scale(1.05);
+}
+
+.why-card-badge-overlay {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(23, 29, 82, 0.85);
+  backdrop-filter: blur(8px);
+  color: var(--solar-lime);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 209, 71, 0.35);
+}
+
+.why-card-body {
+  padding: 0 10px;
 }
 
 .why-card:hover {
@@ -1288,14 +1329,90 @@ button {
 .service-card {
   background: var(--bg-pure);
   border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 26px 24px;
+  border-radius: var(--radius-lg);
+  padding: 14px 14px 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
   box-shadow: var(--shadow-subtle);
   transition: transform 0.3s var(--ease-out-expo), box-shadow 0.3s var(--ease-out-expo), border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.service-card-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg-charcoal);
+  margin-bottom: 12px;
+}
+
+.service-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease-out-expo);
+}
+
+.service-card:hover .service-card-photo img {
+  transform: scale(1.06);
+}
+
+.service-photo-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(15, 19, 48, 0.82);
+  backdrop-filter: blur(8px);
+  color: var(--solar-lime);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 209, 71, 0.35);
+}
+
+.service-card-content {
+  padding: 0 8px;
+}
+
+.service-card-cta {
+  margin: 0 8px;
+  padding: 10px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(29, 53, 135, 0.07);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--bg-forest-deep);
+  transition: all 0.25s ease;
+}
+
+.service-card:hover .service-card-cta {
+  background: var(--brand-gradient);
+  color: #FFFFFF;
+}
+
+.service-card.is-featured .service-card-cta {
+  background: var(--solar-lime);
+  color: var(--bg-forest-deep);
+}
+
+.star-rating-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #F5B301;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
 }
 
 .service-card:hover {
